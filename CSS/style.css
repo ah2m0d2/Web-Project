@@ -1,6 +1,10 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: rgb(50, 65, 130);
+  background-image: url(../Images/yves-cedric-schulze-tOJaxD-11JI-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  
 
 }
 ul {
@@ -8,6 +12,8 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-image: url(../Images/yves-cedric-schulze-tOJaxD-11JI-unsplash.jpg);
+  background-size: cover;
   background-color: rgb(30, 42, 86);
   border-radius: 12px;
 }
@@ -16,17 +22,29 @@ ul li {
 }
 
 ul li a {
+  /*For nav bar text content, A.M*/
   display: block;
-  color: #ffffff;
+  color: #ffffff; 
   text-align: center;
-  padding: 16px 18px;
+  padding: 16px 18px; /*Distance between nav bar content and edges, A.M*/
   text-decoration: none;
 }
 
 ul li a:hover {
-  background-color: rgb(50, 65, 130);;
+  background-color: #324182;;
   color: rgb(255, 255, 255);
   transition: 0.6s;
+}
+nav{
+  border-radius: 12px; 
+  border-bottom: 2px solid #324182; /*This adds a thin bottom border to separate the navigation from the content, delete if not visually pleasing, A.M*/
+  background-image: url(../Images/yves-cedric-schulze-tOJaxD-11JI-unsplash.jpg);
+  background-size: cover;
+  position: fixed; /*This is to make the navigation BAR fixed at the top, A.M*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 
