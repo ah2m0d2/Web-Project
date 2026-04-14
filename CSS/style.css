@@ -15,7 +15,7 @@ ul {
   background-image: url(../Images/yves-cedric-schulze-tOJaxD-11JI-unsplash.jpg);
   background-size: cover;
   background-color: rgb(30, 42, 86);
-  border-radius: 12px;
+ 
 }
 ul li {
   float: left;
@@ -36,8 +36,9 @@ ul li a:hover {
   transition: 0.6s;
 }
 nav{
-  border-radius: 12px; 
-  border-bottom: 2px solid #324182; /*This adds a thin bottom border to separate the navigation from the content, delete if not visually pleasing, A.M*/
+ border: 0px;
+ border-bottom: 2px #324182; /*This adds a thin bottom border to separate the navigation from the content, delete if not visually pleasing, A.M*/
+  border-style: solid;
   background-image: url(../Images/yves-cedric-schulze-tOJaxD-11JI-unsplash.jpg);
   background-size: cover;
   position: fixed; /*This is to make the navigation BAR fixed at the top, A.M*/
