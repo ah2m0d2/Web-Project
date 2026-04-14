@@ -37,11 +37,10 @@ ul li a:hover {
 }
 nav{
  border: 0px;
- border-bottom: 2px #324182; /*This adds a thin bottom border to separate the navigation from the content, delete if not visually pleasing, A.M*/
-  border-style: solid;
+ border-bottom: 2px solid #324182; /*This adds a thin bottom border to separate the navigation from the content, delete if not visually pleasing, A.M*/
   background-image: url(../Images/yves-cedric-schulze-tOJaxD-11JI-unsplash.jpg);
   background-size: cover;
-  position: fixed; /*This is to make the navigation BAR fixed at the top, A.M*/
+  position: fixed; /*This is to make the navigation bar fixed at the top, A.M*/
   top: 0;
   left: 0;
   width: 100%;
