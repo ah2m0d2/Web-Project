@@ -1,7 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: rgb(50, 65, 130);
-  background-image: url(../Images/yves-cedric-schulze-tOJaxD-11JI-unsplash.jpg);
+  background-image: url(../Images/yves-cedric-schulze-tOJaxD-11JI-unsplash.jpg); /*باكجراوند الصفحة*/
   background-size: cover;
   background-attachment: fixed;
   
@@ -12,7 +12,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-image: url(../Images/yves-cedric-schulze-tOJaxD-11JI-unsplash.jpg);
+  background-image: url(../Images/yves-cedric-schulze-tOJaxD-11JI-unsplash.jpg); /*دي الباكجراوند بتاعت الناف بار*/
   background-size: cover;
   background-color: rgb(30, 42, 86);
  display: flex;
@@ -47,9 +47,12 @@ nav{
   left: 0;
   width: 100%;
   z-index: 1000;
-  
 }
 
+/*الكود اللي فوق كله تبع النافيجيشن بار والباكجراوند محدش يعدل عليه
 
+لو هتكتب كود جديد اكتب تحت واكتب اسمك تحت اي كود تكتبه عشان نعرف مين عمل ايه
 
-
+الأفضل لو تشرح عملت ايه كمان بالأنجلش عشان الشكل العام يكون موحد
+A.M
+*/
