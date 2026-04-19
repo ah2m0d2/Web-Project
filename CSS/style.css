@@ -1,4 +1,9 @@
+main {
+  margin-top: 80px; /*بتنزل المحتويات تحت الناف بار*/
+  padding: 20px;
+}
 body {
+  color: white;
   font-family: 'Roboto', sans-serif;
   background-color: rgb(50, 65, 130);
   background-image: url(../Images/yves-cedric-schulze-tOJaxD-11JI-unsplash.jpg); /*باكجراوند الصفحة*/
@@ -18,24 +23,25 @@ ul {
  display: flex;
  flex-direction: row;
   justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3); /*دي بتضيف ظل خفيف تحت الناف بار عشان يبان بشكل اوضح, A.M*/
 }
-ul li {
-  float: left;
-}
+
 
 ul li a {
   /*For nav bar text content, A.M*/
   display: block;
   color: #ffffff; 
-  text-align: center;
+  text-align: center;  /* بتخلي محتويات الناف بار في كل بوكس تحديدا في النص بس الفليكس بتعمل نفس اللي بتعمله بالظبط */
   padding: 16px 18px; /*Distance between nav bar content and edges, A.M*/
   text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 ul li a:hover {
   background-color: #324182;;
   color: rgb(255, 255, 255);
   transition: 0.6s;
+    transform: translateY(-2px);/*انيميشن بسيط عشان عناصر الناف بار, لما تعمل هوفر عليها بالماوس هتبان انها بتطلع فوق بقيمة 2 بيكسل على محور الصادات*/
 }
 nav{
  border: 0px;
@@ -47,7 +53,16 @@ nav{
   left: 0;
   width: 100%;
   z-index: 1000;
+  backdrop-filter: blur(10px);
+  background: rgba(30, 42, 86, 0.7);
+   border-radius: 0 0 12px 12px;
 }
+.nav-link.active {
+  background-color: #324182;
+  border-radius: 0px;
+}
+
+
 
 /*الكود اللي فوق كله تبع النافيجيشن بار والباكجراوند محدش يعدل عليه
 
