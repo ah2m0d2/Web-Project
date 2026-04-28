@@ -4,7 +4,7 @@ Team Structify
 
 # Description
 
-PrimeSite Labs is a web design and development company that builds modern, fast, and professional websites for businesses and clients worldwide.
+PrimeSite Labs is a site for a web design and development company that builds modern, fast, and professional websites for businesses and clients worldwide.
  
 # Features
 
