@@ -2,7 +2,7 @@ main {
   margin-top: 80px; /*بتنزل المحتويات تحت الناف بار*/
   padding: 20px;
     flex: 1;
-    margin-top: 80px;   /* your navbar space */
+    margin-top: 80px;   
     padding: 20px;
 }
 html, body {
