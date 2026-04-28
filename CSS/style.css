@@ -1,4 +1,4 @@
-و/* ===== احمد محمود ===== */
+/* ===== احمد محمود ===== */
 
 main {
   margin-top: 80px; /*بتنزل المحتويات تحت الناف بار*/
@@ -127,22 +127,33 @@ footer {
     font-size: 14px;
 }
 
+.hero-logo {
+    width: 420px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+     margin-bottom: -20px;
+}
+
+.footer-logo {
+      width: 200px;
+    display: block;
+    margin-bottom: -4px;
+    margin-top: -35px;
+}
+.footer-section:first-child p {
+    padding-left: 35px;
+}
 
 .hero {
-    text-align: center;
-    padding: 150px 20px 50px;
+     text-align: center;
+         padding: 0px 20px 50px;
 }
+
+
  
-.hero-badge {
-    display: inline-block;
-    background: rgba(142, 166, 255, 0.15);
-    color: #8ea6ff;
-    font-size: 13px;
-    padding: 5px 16px;
-    border-radius: 20px;
-    border: 1px solid rgba(142, 166, 255, 0.3);
-    margin-bottom: 22px;
-}
+
  
 .hero h1 {
     font-size: 42px;
