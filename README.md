@@ -18,7 +18,7 @@ PrimeSite Labs is a site for a web design and development company with the same 
 
 # Team 
 
-##  احمد محمود عبدوا
+###  احمد محمود عبدوا
 
 **Role:** CSS Architecture · Home Page · Visual Design
 
@@ -30,7 +30,17 @@ PrimeSite Labs is a site for a web design and development company with the same 
 - Reviewed and integrated teammates' CSS contributions for consistency
 
   
-*  احمد صلاح محمد
+### احمد صلاح محمد
+
+**Role:** Services Page · Content & Resources
+
+- Designed and implemented the services page layout
+- Built the service item components
+- Gathered and prepared all visual content and imagery displayed in the services section
+- Wrote and organized the descriptive content for each service entry
+- Handled the mobile-responsive behavior for the services layout
+
+  
 *  احمد اسماعيل بكري
 *  منة الله عبدالناصر
 *  اروى حسن مغربي
