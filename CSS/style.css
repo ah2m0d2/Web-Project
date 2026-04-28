@@ -1,3 +1,5 @@
+و/* ===== احمد محمود ===== */
+
 main {
   margin-top: 80px; /*بتنزل المحتويات تحت الناف بار*/
   padding: 20px;
@@ -334,6 +336,172 @@ footer {
     color: rgba(255, 255, 255, 0.55);
     margin: 0 0 28px;
 }
+
+
+
+
+/* ===== SERVICES PAGE ===== */
+ /* ===== احمد صلاح===== */
+
+.services-hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+}
+
+.services-hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.services-hero p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto; /* Keeps hero text centered */
+}
+
+/* ===== SERVICES GRID CONTAINER ===== */
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    max-width: 1100px;
+    margin: 0 auto 100px;
+    padding: 0 20px;
+}
+
+/* ===== SERVICE ITEM WRAPPER ===== */
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; /* Main centering logic */
+    gap: 40px;
+    width: 100%;
+}
+
+/* ZIG-ZAG: Flip the even items */
+.service-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* ===== SIDE INFO PANEL ===== */
+.service-side-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align right for odd items */
+    width: 110px;
+    flex-shrink: 0;
+    padding-top: 30px;
+    text-align: right;
+}
+
+/* ZIG-ZAG: Align left for even items */
+.service-item:nth-child(even) .service-side-info {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.service-number {
+    font-size: 42px;
+    font-weight: 800;
+    color: rgba(142, 166, 255, 0.12);
+    line-height: 1;
+}
+
+.service-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #8ea6ff;
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+.decorative-line {
+    width: 2px;
+    height: 70px;
+    background: linear-gradient(to bottom, #8ea6ff, transparent);
+    margin-top: 20px;
+}
+
+/* Adjust line position for zig-zag */
+.service-item:nth-child(odd) .decorative-line { margin-right: 4px; }
+.service-item:nth-child(even) .decorative-line { margin-left: 4px; }
+
+/* ===== THE MAIN CARD ===== */
+.service-card-main {
+    flex: 0 1 800px; /* Limits card width to keep it centered */
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(142, 166, 255, 0.15);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.service-item:hover .service-card-main {
+    border-color: rgba(142, 166, 255, 0.4);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.service-card-main img {
+    width: 100%;
+    display: block;
+}
+
+.service-item-body {
+    padding: 35px 40px;
+}
+
+.service-item-body h2 {
+    font-size: 26px;
+    color: #8ea6ff;
+    margin-bottom: 12px;
+}
+
+.service-item-body p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+}
+
+/* ===== FINAL RESULT (Special handling to remain centered) ===== */
+.service-item.full-width {
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-item.full-width .service-side-info {
+    display: none; /* Cleaner look for the summary card */
+}
+
+.service-item.full-width .service-card-main {
+    max-width: 950px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 850px) {
+    .service-item, .service-item:nth-child(even) {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .service-side-info, .service-item:nth-child(even) .service-side-info {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .decorative-line { display: none; }
+}
+ 
 /*الكود اللي فوق كله تبع النافيجيشن بار والباكجراوند محدش يعدل عليه
 
 لو هتكتب كود جديد اكتب تحت واكتب اسمك تحت اي كود تكتبه عشان نعرف مين عمل ايه
