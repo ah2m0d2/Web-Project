@@ -10,6 +10,7 @@ main {
 html, body {
   margin: 0;
   height: 100%;
+  overscroll-behavior: none; /*This prevents the "bounce" effect on mobile and laptop devices when scrolling past the top or bottom of the page, A.M*/   
 }
 body {
   color: white;
@@ -129,7 +130,7 @@ footer {
 
 .hero {
     text-align: center;
-    padding: 60px 20px 50px;
+    padding: 150px 20px 50px;
 }
  
 .hero-badge {
@@ -453,7 +454,7 @@ footer {
 }
 
 .service-item-body {
-    padding: 35px 40px;
+    padding: 15px 40px;
 }
 
 .service-item-body h2 {
