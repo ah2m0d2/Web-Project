@@ -47,9 +47,9 @@ body {
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
 }
 
-/* ===== LOGO (optional — add if you want the logo above h1) ===== */
+/* ===== LOGO ===== */
 .welcome-logo {
-    width: 200px;
+    width: 400px;
     display: block;
     margin: 0 auto 28px;
 }
@@ -71,7 +71,7 @@ body {
     margin-bottom: 36px;
 }
 
-/* ===== WELCOME BUTTON — matches .btn-primary ===== */
+/* ===== WELCOME BUTTON ===== */
 .welcome-btn {
     display: inline-block;
     background: #8ea6ff;
