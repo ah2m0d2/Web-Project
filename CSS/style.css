@@ -1,4 +1,8 @@
 /* ===== احمد محمود ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 
 main {
   margin-top: 80px; /*بتنزل المحتويات تحت الناف بار*/
@@ -21,6 +25,7 @@ body {
   background-attachment: fixed;
   display: flex;
     flex-direction: column;
+    overflow-x: hidden;
   
   
 
@@ -352,8 +357,8 @@ footer {
 
 
 
-/* ===== SERVICES PAGE ===== */
- /* ===== احمد صلاح===== */
+                         /* ===== SERVICES PAGE ===== */
+                        /* ===== احمد صلاح===== */
 
 .services-hero {
     text-align: center;
@@ -514,10 +519,492 @@ footer {
     .decorative-line { display: none; }
 }
  
-/*الكود اللي فوق كله تبع النافيجيشن بار والباكجراوند محدش يعدل عليه
 
-لو هتكتب كود جديد اكتب تحت واكتب اسمك تحت اي كود تكتبه عشان نعرف مين عمل ايه
+                                                         /* about */
+.accent {
+    color: #8ea6ff;
+}
+
+/* ===== PAGE HERO ===== */
+.about-hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+}
+
+.about-hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ===== OUR STORY ===== */
+.story-section {
+    max-width: 800px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.story-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #8ea6ff;
+    margin-bottom: 20px;
+}
+
+.story-section p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+
+/* ===== VISION & MISSION ===== */
+.vm-section {
+    max-width: 1100px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.vm-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.vm-intro {
+    font-size: 12px;
+    color: #8ea6ff;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+
+.vm-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.vm-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(142, 166, 255, 0.15);
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: left;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.vm-card:hover {
+    border-color: rgba(142, 166, 255, 0.45);
+    transform: translateY(-4px);
+}
+
+.vm-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #8ea6ff;
+    margin: 0 0 12px;
+}
+
+.vm-card p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ===== VALUES ===== */
+.values-section {
+    max-width: 1100px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.values-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.values-intro {
+    font-size: 12px;
+    color: #8ea6ff;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.value-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(142, 166, 255, 0.15);
+    border-radius: 12px;
+    padding: 24px 20px;
+    text-align: left;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.value-item:hover {
+    border-color: rgba(142, 166, 255, 0.45);
+    transform: translateY(-4px);
+}
+
+.value-item h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 8px;
+}
+
+.value-item p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+    .about-hero h1 {
+        font-size: 30px;
+    }
+
+    .vm-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+                                                     /* Contact */
+
+.contact-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-box {
+  width: 380px;
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.contact-box h2 {
+  margin-bottom: 10px;
+}
+
+.contact-box p {
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  color: white;
+  outline: none;
+  resize: none;
+}
+
+.input-group label {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  font-size: 14px;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+  top: -10px;
+  font-size: 12px;
+  color: #00c6ff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* ===== TEAM PAGE ===== */
+/* Rewritten to match dark navy design system — A.M */
+
+main {
+    background-color: transparent;
+    background-image: none;
+    color: white;
+    line-height: 1.7;
+    margin-top: 80px;
+    padding: 20px;
+}
+ 
+/* ===== SHARED CONTAINER ===== */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+ 
+/* ===== SECTION TITLES ===== */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+    text-align: center;
+}
+ 
+.section-subtitle {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.45);
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+ 
+/* ===== HERO ===== */
+.team-hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+}
+ 
+.team-hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+ 
+.team-hero h1 span {
+    color: #8ea6ff;
+}
+ 
+.team-hero p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+ 
+/* ===== TEAM MEMBERS SECTION ===== */
+.team-members {
+    padding: 60px 24px;
+}
+ 
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+ 
+/* ===== TEAM CARD ===== */
+.team-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(142, 166, 255, 0.15);
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+ 
+.team-card:hover {
+    border-color: rgba(142, 166, 255, 0.45);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+ 
+.card-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top; /* anchors to face rather than center/bottom */
+    transition: transform 0.3s;
+}
+ 
+.team-card:hover .card-image img {
+    transform: scale(1.05);
+}
+ 
+.team-card h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 20px 16px 6px;
+    font-weight: 600;
+}
+ 
+.team-card .role {
+    color: #8ea6ff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0 16px 8px;
+}
+ 
+.team-card .bio {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.88rem;
+    margin: 0 16px 16px;
+    line-height: 1.6;
+}
+ 
+/* ===== SOCIAL LINKS ===== */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 0 16px 20px;
+}
+ 
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(142, 166, 255, 0.1);
+    color: #8ea6ff;
+    border-radius: 50%;
+    text-decoration: none;
+    border: 1px solid rgba(142, 166, 255, 0.2);
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+ 
+.social-links a:hover {
+    background: #8ea6ff;
+    color: #0d1535;
+    border-color: #8ea6ff;
+}
+ 
+/* ===== TEAM VALUES SECTION ===== */
+.team-values {
+    padding: 60px 24px 80px;
+}
+ 
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+ 
+.value-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(142, 166, 255, 0.15);
+    border-radius: 12px;
+    padding: 28px 20px;
+    text-align: center;
+    transition: border-color 0.3s, transform 0.3s;
+}
+ 
+.value-card:hover {
+    border-color: rgba(142, 166, 255, 0.45);
+    transform: translateY(-4px);
+}
+ 
+.value-card i {
+    font-size: 2rem;
+    color: #8ea6ff;
+    margin-bottom: 14px;
+}
+ 
+.value-card h3 {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+ 
+.value-card p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin: 0;
+}
+ 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .team-hero h1 {
+        font-size: 30px;
+    }
+ 
+    .team-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+/* لو هتكتب كود جديد اكتب تحت واكتب اسمك تحت اي كود تكتبه عشان نعرف مين عمل ايه
 
 الأفضل لو تشرح عملت ايه كمان بالأنجلش عشان الشكل العام يكون موحد
 A.M
-*/
+*/ 

@@ -1,0 +1,102 @@
+/* login */
+
+
+ /* ===== WELCOME / SPLASH SCREEN ===== */
+/* Matches dark navy design system — A.M */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* No scrolling on splash screen */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #101e5f;
+    background-image: url(../Images/background\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ===== FULL SCREEN CENTERED CONTAINER ===== */
+.welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ===== WELCOME BOX ===== */
+.welcome-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(142, 166, 255, 0.2);
+    border-radius: 20px;
+    padding: 60px 48px;
+    text-align: center;
+    max-width: 520px;
+    width: 100%;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== LOGO (optional — add if you want the logo above h1) ===== */
+.welcome-logo {
+    width: 200px;
+    display: block;
+    margin: 0 auto 28px;
+}
+
+/* ===== HEADING ===== */
+.welcome-box h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 14px;
+    line-height: 1.2;
+}
+
+/* ===== SUBTEXT ===== */
+.welcome-box p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.7;
+    margin-bottom: 36px;
+}
+
+/* ===== WELCOME BUTTON — matches .btn-primary ===== */
+.welcome-btn {
+    display: inline-block;
+    background: #8ea6ff;
+    color: #0d1535;
+    padding: 13px 40px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.welcome-btn:hover {
+    background: #aabfff;
+    transform: translateY(-2px);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 480px) {
+    .welcome-box {
+        padding: 40px 28px;
+    }
+
+    .welcome-box h1 {
+        font-size: 24px;
+    }
+}
