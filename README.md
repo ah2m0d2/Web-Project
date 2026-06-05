@@ -24,7 +24,7 @@ PrimeSite Labs is a site for a web design and development company with the same 
 
 - Structured and maintained the shared `style.css` file used across all pages
 - Built the fixed navigation bar with hover animations, and active-link state
-- Designed and implemented the home page: hero section, stats strip, services grid, and CTA banner
+- Designed and implemented the home page: hero section, stats strip and serviced grid.
 - Created the site-wide footer layout with quick links and contact info
 - Established the global visual identity: color palette, background image system, frosted-glass effects, and `overscroll` behavior
 - Reviewed and integrated teammates' CSS contributions for consistency
